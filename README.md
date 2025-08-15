@@ -1,3 +1,7 @@
+### Lightweight UAV RFFI 
+
+This paper propose an efficient and low-complexity RFFI method for UAV identification. Specifically, we design a lightweight backbone network consisting of lightweight multi-scale convolution (LMSC) blocks that can significantly reduce the model size and enhance the feature extraction ability.
+
 ### License / 许可证
 
 ```
