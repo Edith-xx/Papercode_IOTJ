@@ -64,7 +64,7 @@ class Res2Net(nn.Module):
         for i in range(1, blocks):
             layers.append(block(self.inplanes, planes, scale=self.scale))
         return nn.Sequential(*layers)
-    def forward(self, x, snr):
+    def forward(self, x):
 
         x = self.conv(x)
         x = self.relu(x)
@@ -79,18 +79,3 @@ class Res2Net(nn.Module):
 def my_resnet():
     model = Res2Net(Bottle2neck, [2, 2], 3, 7)
     return model
-
-'''
-shuffle_chnls
-def shuffle_chnls(x, groups=2):
-    """Channel Shuffle"""
-
-    bs, chnls, h, w = x.data.size()
-    if chnls % groups:
-        return x
-    chnls_per_group = chnls // groups
-    x = x.view(bs, groups, chnls_per_group, h, w)
-    x = torch.transpose(x, 1, 2).contiguous()
-    x = x.view(bs, -1, h, w)
-    return x
-'''
