@@ -73,7 +73,7 @@ class Res2Net(nn.Module):
         x = self.layer2(x)
         x = self.avgpool(x)
         x = x.view(x.size(0), -1)
-        x1 = torch.cat((x, snr), 1)
+        x1 = torch.cat((x), 1)
         x = self.fc(x1)
         return x
 def my_resnet():
