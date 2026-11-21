@@ -109,7 +109,7 @@ The LMSC design is inspired by multiscale representation learning in Res2Net and
 
 ## Contact
 
-For questions about the paper, please contact the authors:
+For questions about the paper, please contact the author:
 
 - Zhenxin Cai: `652022230002@smail.nju.edu.cn`
 
