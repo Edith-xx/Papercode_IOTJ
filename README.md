@@ -40,14 +40,6 @@ Python 3.6.4
 PyTorch 1.10.2
 ```
 
-A compatible environment can be created with:
-
-```bash
-conda create -n lightweight-uav-rffi python=3.6.4
-conda activate lightweight-uav-rffi
-pip install torch==1.10.2
-```
-
 Install the remaining packages according to the imports used by the repository or the provided `requirements.txt` file.
 
 ---
